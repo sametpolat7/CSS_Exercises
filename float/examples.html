@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Examples</title>
+    <link rel="stylesheet" href="examples.css">
+</head>
+<body>
+    <section>
+    <div class="clearfix"> <!--boxes next to each other-->
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <div class="clearfix "> <!--side by side pictures-->
+        <img src="https://picsum.photos/200/200" alt="LoremPicsum" class="img-box">
+        <img src="https://picsum.photos/200/200" alt="LoremPicsum" class="img-box">
+        <img src="https://picsum.photos/200/200" alt="LoremPicsum" class="img-box">
+        <img src="https://picsum.photos/200/200" alt="LoremPicsum" class="img-box">
+    </div>
+    <div class="clearfix"> <!--2 equal box-->
+        <div class="eq-box">Lorem ipsum dolor sit.</div>
+        <div class="eq-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis iste ipsa! Quia, expedita officiis! Nostrum non tempora distinctio delectus saepe voluptatum quod maxime harum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maxime? <!-- Here the text (you can open it in the browser) has overflowed out of the box. Because we did not establish a flexible structure. The solution to this is flexbox. -->
+        </div>
+    </div>
+    <div class="clearfix-1"> <!--2 equal flexbox-->
+        <div class="flexbox">Lorem ipsum dolor sit.</div>
+        <div class="flexbox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis iste ipsa! Quia, expedita officiis! Nostrum non tempora distinctio delectus saepe voluptatum quod maxime harum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maxime?
+        </div>
+    </div>
+    <div> <!--Navigation Menu-->
+        <ul class="ul">
+            <li class="li"><a class="a" href="#Home" style="background-color: red;" >Home</a></li>
+            <li class="li"><a class="a" href="#News">News</a></li>
+            <li class="li"><a class="a" href="#Contact">Contact</a></li>
+            <li class="li"><a class="a" href="#History">History</a></li>
+        </ul>
+    </div>
+    </section>
+    <section style="clear: left;"> <!--Examples-->
+        <header class="header">
+            <h1>HEADING-1</h1>
+        </header>
+        <div  class="container">
+            <div class="column menu">
+                <ul>
+                    <li>List1</li>
+                    <li>List2</li>
+                    <li>List3</li>
+                    <li>List4</li>
+                </ul>
+            </div>
+            <h2 style="text-align: center; width: 75%; margin-top: 40px;" >Heading-2</h2>
+            <div class="column content">
+                <span>L</span>orem ipsum, dolor sit amet consectetur adipisicing elit. Quam consequuntur nihil laborum quae amet minima impedit ea voluptatum. Veritatis amet ratione cumque maxime esse consequatur aliquam? Dignissimos, soluta?
+            </div>
+        </div>
+        <footer class="header">
+            <p style="font-size: 24px;">
+                Lorem ipsum dolor sit amet consectetur!
+            </p>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.margin-auto {
+    border: 2px solid red;
+    width: 50%; /*Note: Center aligning has no effect if the width property is not set (or set to 100%).*/
+    margin: auto;
+}
+.text-align {
+    border:2px solid red;
+    text-align: center;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+}
+.position-right {
+    position: absolute; /*Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.*/
+    right: 0;
+    border: 2px solid red;
+}
+.float-right {
+    float: right;
+    border: 2px solid red;
+    margin-top: 55px;
+}
+.pad {
+   clear: right; /*Because we used float on top.*/
+   border: 2px solid red;
+   padding: 70px 0;
+   text-align: center; /*this provide to horizontal alignment*/
+}
+.line-height {
+    border: 2px solid red;
+    line-height: 70px;
+    text-align: center;
+}
+
+.flexbox {
+    border: 2px solid red;
+    height: 200px;
+    display: flex;
+    justify-content: center; /*when set display: flex this code behaves like text-align: center;*/
+    align-items: center; /*Vertically alignment*/
+}

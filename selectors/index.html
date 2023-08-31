@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samet Polat" >
+    <meta name="http-equiv" content="30" >
+    <title>Selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+<body>
+    <header>
+        <h1>The Selectors</h1>
+        <!-- In CSS, selectors are patterns used to select the element(s) you want to style. -->
+    </header>
+    <main>
+        <section> <!--Class Selectors-->
+            <div>
+                <h3>Class Selectors</h3>
+                <ol>
+                    <li>&nbsp;.class</li> <!--Select all classes named "class"-->
+                    <li>&nbsp;.class1.class2</li> <!--Selects all elements with both "class1" and "class2".-->
+                    <li>&nbsp;.class1 .class2</li><!--Selects all elements with "class2" that is a descendant of an element with "class1".-->
+                </ol>
+                <h3>Examples</h3>
+                <ol>
+                    <li class="sample1">This text is red.</li>
+                    <li class="sample1 sample2">This text is green.</li>
+                    <span class="sample1">
+                        <li class="sample2">This text is blue.</li>
+                    </span>
+                </ol>
+            </div>
+        </section>
+        <section> <!--ID, Select all and Element Selectors-->
+            <div>
+                <h3>ID,Select All and Element Selectors</h3>
+                <ol>
+                    <li>#firstname</li> <!--Selects the element with id="firstname"-->
+                    <li>*</li> <!--Select all elements-->
+                    <li>p</li> <!--Select all <p> elements-->
+                    <li>p.intro</li> <!--Selects all <p> elements with class="intro"-->
+                    <li>div, p</li> <!--Selects all <div> elements and all <p> elements-->
+                    <li>div p</li> <!--Selects all <p> elements inside <div> elements--> <!--See the difference-->
+                    <!--Yukarıdaki içinde herhangi bi yerde bulunan-->
+                        <li>div > p</li><!--Selects all <p> elements where the parent is a <div> element-->
+                    <!--Yukarıdaki direkt içinde bulunan-->
+                        <li>div + p</li><!--Selects the first <p> element after <div> elements -->
+                    <li>p ~ ul</li><!--Selects every <ul> element that is preceded by a <p> element-->
+                </ol>
+                <h3>Examples</h3>
+                <ol>
+                    <li id="sample4">This text is aqua.</li>
+                    <li>* {background-color: x}; and all text color is x</li>
+                    <li>The font of this line and all li elements line is Lucida. </li>
+                    <li><b><i>This text is blueviolet </i></b></li>
+                    <li><span><p>This text is chocolate.</p></span></li>
+                    <li><span>This text is darkolivegreen. </span></li>
+                    <li>Down</li>
+                        <p>This text is Yellow</p>
+                    <li>Önünde bir p elementi olan tüm ul elementleri</li>
+                </ol>
+            </div>
+        </section>
+        <section> <!--Attribute Selectors-->
+            <div>
+                <h3>Attributes Selectors</h3>
+                <ol>
+                    <li>[target]</li><!--Selects all elements with a target attribute-->
+                    <li>[target="_blank"]</li><!--Selects all elements with target="_blank"-->
+                    <li>[title~="flower"]</li><!--Selects all elements with a title attribute containing the word "flower"-->
+                    <li>[lang|="en"]</li>|<!--Selects all elements with a lang attribute value equal to "en" or starting with "en-"-->
+                    <li>a[href^="https"]</li><!--Selects every <a> element whose href attribute value begins with "https"-->
+                    <li>a[href$=".pdf"]</li><!--Selects every <a> element whose href attribute value ends with ".pdf"-->
+                    <li>a[href*="w3schools"]</li><!--Selects every <a> element whose href attribute value contains the substring "w3schools"-->
+                </ol>
+                <h3>Examples</h3>
+                <ol>
+                    <li title="Examples">background-color of text is brown</li>
+                    <li><a href="https://google.com" target="_blank">background-color of text is violet</a></li>
+                    <li title="font-fm">The font of this text is Impact.</li>
+                    <li type="A" >This text is 20px</li>
+                    <li><a href="https://yahoo.com">This post is on the right</a></li>
+                </ol> <!--Examples are given together. You can view the differences-->
+            </div>
+        </section>
+        <section> <!--Pseudo Classes Selectors ":"-->
+            <div>
+                <h3>Pseudo Classes Selectors ":"</h3>
+                <ol>
+                    <li>a:active</li> <!--Selects the active link-->
+                    <li>a:hover</li> <!--Selects links on mouse over-->
+                    <li>p:first-child</li><!--Selects every <p> element that is the first child of its parent -->
+                    <li>p:nth-child(2)</li><!--Selects every <p> element that is the second child of its parent-->
+                    <li>:not(p)</li><!--Selects every element that is not a <p> element-->
+                </ol>
+                <h3>Examples</h3>
+                <ol>
+                    <li><a href="https://twitter.com">Link color is red</a></li>
+                    <li><a href="https://twitter.com">Text color is blue when mouse come on this text</a></li>
+                    <li>First lines of lists is 36px </li>
+                    <li>This text is brown.</li>
+                    <li>none</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

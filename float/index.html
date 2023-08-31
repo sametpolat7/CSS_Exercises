@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Float and Clear</h1>
+        <!-- The CSS float property specifies how an element should float.-->
+    </header>
+    <main>
+        <section> <!--Float Property-->
+            <div> <!--float: right; or : left;-->
+                <!--This is normal flow so float: none; -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p><img src="https://picsum.photos/200/300" alt="LoremPicsum" title="Lorem" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora facilis obcaecati dicta pariatur praesentium, voluptates totam nulla unde dolorum id esse corrupti molestias maiores? Repellendus placeat voluptates ducimus animi explicabo?
+                </p><hr><br>
+                <!-- This is float: right; -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p><img class="float-right" src="https://picsum.photos/200/300" alt="LoremPicsum" title="Lorem" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora facilis obcaecati dicta pariatur praesentium, voluptates totam nulla unde dolorum id esse corrupti molestias maiores? Repellendus placeat voluptates ducimus animi explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam repellendus debitis illum esse ipsam! Aliquid eos ut sed itaque repellendus distinctio velit autem fugit.
+                </p>
+            </div>
+            <div class="container"><!--Float next to each other and use clear-->
+                <div class="boxes"> Box-1 
+                    <div id="box1"></div>
+                </div>
+                <div class="boxes">Box-2
+                    <div id="box2"></div>
+                </div>
+                <div class="boxes">Box-3
+                    <div id="box3"></div>
+                </div>
+            </div>
+            <div class="clc border"> <!--The Clearfix Hack-->
+                <h2>Without Clearfix</h2>
+                <img class="float-right" src="https://picsum.photos/200/300" alt="LoremPicsum">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis mollitia voluptatum ipsam minima asperiores veniam nobis vel quas.
+            </div>
+            <div class="clc-1 border clearfix" > <!--Clearfix-->
+                <h2>With Clearfix</h2>
+                <img class="float-right" src="https://picsum.photos/200/300" alt="LoremPicsum">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore minima nobis eveniet in! Quisquam voluptatem sit dignissimos?
+            </div>
+            <div class="clc" > <!--The Modern Clearfix-->
+                <h2>New Modern Clearfix</h2>
+                <div class="border clearfix" >
+                    <img class="float-right" src="https://picsum.photos/200/300" alt="LoremPicsum">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae corrupti reprehenderit sequi velit expedita minima, sed consectetur aut.
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

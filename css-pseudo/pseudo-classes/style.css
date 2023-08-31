@@ -1,0 +1,47 @@
+a.highlight:hover {
+    background-color: tomato;
+    font-size: 22px;
+}
+.marked-box {
+    border: 2px solid red;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.marked-box:hover {
+    background-color: rgb(44, 235, 44);
+    color: white;
+    border: 2px solid green;
+    text-transform: uppercase;
+}
+.tooltip {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid green;
+}
+.dsp-n {
+    display: none;
+}
+.tooltip:hover {
+    background-color: green;
+}
+.tooltip:hover p.dsp-n {
+    display: block;
+}
+.sth {
+    display: none;
+    background-color: yellow;
+}
+div:hover .sth {
+    display: block;
+}
+q:first-child {
+    color: green;
+}
+span i:first-child {
+    background-color: green;
+}
+p:first-child i {
+    background-color: green;
+}

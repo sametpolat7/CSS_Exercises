@@ -1,0 +1,78 @@
+.sample1 {
+    color: red;
+}
+
+.sample1.sample2 {
+    color:green;
+}
+
+.sample1 .sample2 {
+    color:blue;
+}
+
+#sample4 {
+    background-color: aqua;
+}
+
+li {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+b, i {
+    color: blueviolet;
+}
+
+li p {
+    color:chocolate;
+}
+
+li > span {
+    color:darkolivegreen;
+}
+
+li + p {
+    color:yellow;
+}
+
+[title] {
+    background-color: brown;
+}
+
+[target="_blank"] {
+    background-color:blueviolet;
+}
+
+[title~="font-fm"] {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+[type|="A"] {
+    font-size: 20px;
+}
+
+a[href^="https"] {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a[href$=".com"] {
+    background-color:coral;
+}
+
+li[type*="A"] {
+    background-color: darkslategray;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+li:first-child {
+    font-size: 36px;
+}
+
+li:nth-child(4) {
+    color: brown;
+}

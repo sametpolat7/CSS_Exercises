@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Links</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Links</h1>
+        <!-- In addition, links can be styled differently depending on what state they are in.-->
+        <!--
+            The four links states are:
+            a:link - a normal, unvisited link
+            a:visited - a link the user has visited
+            a:hover - a link when the user mouses over it
+            a:active - a link the moment it is clicked
+        -->
+        <div>
+            <a href="https://www.w3schools.com/css/default.asp" class="pseudo">Link</a><br><br>
+        </div>
+    </header>
+    <main>
+        <div> <!--Basic Link Attributes-->
+            <a class="basic-links" href="https://www.w3schools.com/css/default.asp" target="_blank">Link</a>
+            <br><br>
+            <!-- When setting the style for several link states, there are some order rules:
+
+                a:hover MUST come after a:link and a:visited
+                a:active MUST come after a:hover -->
+                <a class="text-decoration-none"href="https://www.w3schools.com/css/default.asp">Link</a><br><br>
+        </div>
+        <div> <!--Link Buttons-->
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="buttons1">Link</a>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="buttons2">Link</a>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="buttons3">Link</a>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="buttons4">Link</a>
+        </div>
+        <div><!--Cursor-->
+            <span style="cursor:alias;">Link</span><br>
+            <span style="cursor:all-scroll;">Link</span><br>
+            <span style="cursor:cell;">Link</span><br>
+            <span style="cursor:col-resize;">Link</span><br>
+            <span style="cursor:context-menu;">Link</span><br>
+            <span style="cursor:copy;">Link</span><br>
+            <span style="cursor:crosshair;">Link</span><br>
+            <span style="cursor:default;">Link</span><br>
+            <span style="cursor:e-resize;">Link</span><br>
+            <span style="cursor:ew-resize;">Link</span><br>
+            <span style="cursor:grab;">Link</span><br>
+            <span style="cursor:grabbing;">Link</span><br>
+            <span style="cursor:help;">Link</span><br>
+            <span style="cursor:move;">Link</span><br>
+            <span style="cursor:n-resize;">Link</span><br>
+            <span style="cursor:ne-resize;">Link</span><br>
+            <span style="cursor:nesw-resize;">Link</span><br>
+            <span style="cursor:no-drop;">Link</span><br>
+            <span style="cursor:none;">Link</span><br>
+            <span style="cursor:not-allowed;">Link</span><br>
+            <span style="cursor:ns-resize;">Link</span><br>
+            <span style="cursor:pointer;">Link</span><br>
+            <span style="cursor:progress;">Link</span><br>
+            <span style="cursor:text;">Link</span><br>
+            <span style="cursor:vertical-text;">Link</span><br>
+            <span style="cursor:wait;">Link</span><br>
+            <span style="cursor:zoom-in;">Link</span><br>
+        </div>
+    </main>
+</body>
+</html>

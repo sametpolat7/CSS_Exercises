@@ -1,0 +1,29 @@
+.first-line {
+    font-size: 24px;
+    line-height: 24px;
+}
+.first-line::first-line {
+    background-color: green;
+    color: white;
+}
+.first-letter::first-letter {
+    color: red;
+    font-size: xx-large;
+}
+.before::before {
+    content: "B99--|";
+    color: red;
+    font-size: xx-large;
+}
+.after::after {
+    color:red;
+    font-size: xx-large;
+    content: "|--B99";
+}
+::marker {
+    color: red;
+}
+.selection::selection {
+    color: yellow;
+    background-color: red;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        img {
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .text {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            color: green;
+            background-color: wheat;
+        }
+        .container {
+            position: relative;
+            top: 500px;
+            left: 25%;
+        }
+        #box1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 2px solid black;
+            width: 300px;
+            height: 80px;
+            color: white;
+            background-color: black;
+            z-index: 1; /*En düşük z-index değerine sahip olan en arkadadır.*/
+        }
+        #box2 {
+            position: absolute;
+            top: 15px;
+            left: 15%;
+            border: 2px solid green;
+            width: 300px;
+            height: 90px;
+            background-color: green;
+            z-index: 3; /*En yüksek z-index değerine sahip olan en öndedir.*/
+        }
+        #box3 {
+            position: absolute;
+            top: 75px;
+            left: 5%;
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Z-Index</h1>
+        <!-- The z-index property specifies the stack order of an element.-->
+    </header>
+    <main>
+        <section> <!--The z-index Property-->
+            <div> <!-- z-index: -1; -->
+                <!-- When elements are positioned, they can overlap other elements.-->
+                <span class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum a, sit illo iste veritatis?
+                </span>
+                <img class="img" src="img/vesikalik.jpeg" alt="Samet" width="360" height="480">
+                <!-- Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements). -->
+            </div>
+            <div class="container">
+                <!-- Here we will see that an element with greater stack order is always above an element with a lower stack order:-->
+                <div id="box1">Black Box</div>
+                <div id="box2">Green Box</div>
+                <div id="box3">Blue Box</div>
+                <!-- If two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top.-->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

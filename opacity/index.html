@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Opacity</h1>
+    </header>
+    <section> <!--CSS Opacity / Transparency-->
+        <div> <!--Transparent Image-->
+            <img class="opacity-img"src="https://picsum.photos/200/300" alt="LoremPicsum" title="Lorem Picsum">
+            <img class="opacity-img"src="https://picsum.photos/200/300" alt="LoremPicsum" title="Lorem Picsum">
+            <img class="opacity-img"src="https://picsum.photos/200/300" alt="LoremPicsum" title="Lorem Picsum">
+        </div> 
+        <div class="float-left"> <!--Transparent Box-->
+            <h2>With Opacity</h2>
+            <div class="boxes1">Box 1</div>
+            <div class="boxes2">Box 2</div>
+            <div class="boxes3">Box 3</div>
+            <div class="boxes4">Box 4</div>
+            <!-- When using the opacity property to add transparency to the background of an elementall of its child elements inherit the same transparency. This can make the text inside fully transparent element hard to read:-->
+        </div>
+        <div> <!--Solution is: Transparency using RGBA-->
+            <!-- If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text: -->
+            <h2>With RGBA color values</h2>
+            <div class="box1">Box 1</div>
+            <div class="box2">Box 2</div>
+            <div class="box3">Box 3</div>
+            <div class="box4">Box 4</div>
+        </div>
+    </section>
+</body>
+</html>

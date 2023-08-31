@@ -1,0 +1,137 @@
+.text-color {
+    width: 300px;
+    color: orange;
+    background-color: yellow;
+}
+.alignment1 {
+    text-align: center;
+}
+.alignment2 {
+    text-align: left;
+}
+.alignment3 {
+    text-align: right;
+}
+.last-line-center {
+    text-align-last: center;
+}
+.last-line-right {
+    text-align-last: right;
+}
+.last-line-justify {
+    text-align-last: justify;
+}
+.vertical-align-baseline {
+    width: 8px;
+    height: 8px;
+    vertical-align: baseline;
+}
+.vertical-align-top {
+    width: 8px;
+    height: 8px;
+    vertical-align: text-top;
+}
+.vertical-align-bottom {
+    width: 8px;
+    height: 8px;
+    vertical-align: text-bottom;
+}
+.vertical-align-sub {
+    width: 8px;
+    height: 8px;
+    vertical-align: sub;
+}
+.vertical-align-super {
+    width: 8px;
+    height: 8px;
+    vertical-align: super;
+}
+.decoration-overline {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+.decoration-underline {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+}
+.decoration-line-through {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+}
+.decoration-style-solid {
+    text-decoration-line: overline;
+    text-decoration-style: solid;
+}
+.decoration-style-double {
+    text-decoration-line: overline;
+    text-decoration-style: double;
+}
+.decoration-style-wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+.decoration-thickness-5px {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+}
+.decoration-thickness-50 {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 50%;
+}
+.decoration-shorthand1 {
+    text-decoration: overline red double 5px;
+}
+.decoration-shorthand2 {
+    text-decoration: underline solid 5px;
+}
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+.text-transform-lowercase {
+    text-transform: lowercase;
+}
+.text-transform-capitalized {
+    text-transform: capitalize;
+}
+.text-indent {
+    text-indent: 50px;
+}
+
+.letter-spacing1 {
+    letter-spacing: 5px;
+}
+.letter-spacing2 {
+    letter-spacing: -2px;
+}
+.word-spacing1 {
+    word-spacing: 10px;
+}
+.word-spacing2 {
+    word-spacing: -5px;
+}
+.line-height1 {
+    line-height: 2px;
+}
+.line-height2 {
+    line-height: 5px;
+}
+.line-height3 {
+    line-height: 50px;
+}
+.text-shadow1 {
+    text-shadow: 2px 2px;
+}
+.text-shadow2 {
+    text-shadow: 2px 2px red;
+}
+.text-shadow3 {
+    text-shadow: 2px 2px 2px red;
+}
+.text-shadow4 {
+    text-shadow: 0 0 3px red, 0 0 5px blue;
+}
+.text-shadow5 {
+    text-shadow: 3px 3px 8px yellow, 3px 3px 8px red, 3px 3px 8px orange;
+}

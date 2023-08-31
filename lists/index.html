@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        .type1 {
+            list-style-type: circle;
+        }
+        .type2 {
+            list-style-type: square;
+        }
+        .type3 {
+            list-style-type: upper-roman;
+        }
+        .type4 {
+            list-style-type: lower-alpha;
+        }
+        .type5 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .type6 {
+            list-style-type: none;
+            background-color: wheat;
+            border-left: 5px solid red;
+            padding: 10px 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LISTS</h1>
+        <!-- In HTML, there are two main types of lists:
+
+            unordered lists (<ul>) - the list items are marked with bullets
+            ordered lists (<ol>) - the list items are marked with numbers or letters -->
+    </header>
+    <main>
+        <section> <!--Different List Item Markers-->
+            <div>
+                <!--Unordered Lists-->
+                <ul class="type1">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ul>
+                <ul class="type2">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ul>
+                <!--Ordered Lists-->
+                <ol class="type3">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ol>
+                <ol class="type4">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ol>
+            </div>
+        </section>
+        <section> <!--Remove Default Settings-->
+            <div>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ul>
+                <!-- The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>:-->
+                <ul class="type5">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ul>
+
+                <!-- An Example -->
+                <ul class="type6">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Alcohol</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

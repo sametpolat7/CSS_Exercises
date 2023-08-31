@@ -1,0 +1,79 @@
+.basic-links {
+    color:brown;
+    background-color: tomato;
+}
+/* Unvisited Link */
+.pseudo:link {
+    color: aqua;
+}
+/* Visited Link */
+.pseudo:visited {
+    color: blueviolet;
+}
+/* Mouse over link */
+.pseudo:hover {
+    color: seagreen;
+}
+/* Selected link */
+.pseudo:active {
+    color: black;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+a.buttons1:link, a.buttons1:visited {
+    color: white;
+    background-color: rgb(34,139,34);
+    padding: 14px 25px;
+    border:2px solid green;
+    text-decoration: none;
+    display: inline-block;
+}
+a.buttons1:hover, a.buttons1:active {
+    background-color: brown;
+    color: bisque;
+}
+a.buttons2:link {
+    color: teal;
+    background-color: tomato;
+    padding: 14px 25px;
+    border: 2px solid white;
+    text-decoration: none;
+    display: inline-block;
+}
+a.buttons2:visited {
+    border: 5px dashed wheat;
+}
+a.buttons2:hover {
+    border-radius: 25px;
+    background-color: skyblue;
+}
+a.buttons2:active {
+    padding: 54px 75px;
+    color: sienna;
+}
+a.buttons3:link {
+    border-radius: 100%;
+    padding: 16px 24px;
+    color: white;
+    background-color: rgb(34,139,34);
+    text-decoration: none;
+}
+a.buttons3:hover {
+    background-color: tomato;
+    color: brown;
+    padding: 32px 48px;
+}
+a.buttons4:link, a.buttons4:visited {
+    background-color: white;
+    border: 2px solid green;
+    color:green;
+    padding: 14px 25px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+a.buttons4:hover, a.buttons4:active {
+    color: white;
+    background-color: green;
+}

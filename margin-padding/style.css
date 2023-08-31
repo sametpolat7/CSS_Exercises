@@ -1,0 +1,86 @@
+header {
+    margin: auto; /*Margin is processed for the allocated width*/
+    width: 120px; 
+    background-color: blue;
+}
+h1 {
+    margin: inherit; /*Inherited from header. Check the first header to see this.*/
+}
+p {
+    background-color: aquamarine;
+}
+.px-100 {
+    margin: 100px;
+}
+.px-100p {
+    margin: 100px;
+}
+.margin-top {
+    margin-top: 100px;
+}
+.margin-bottom {
+    margin-bottom: 100px;
+}
+.margin-left {
+    margin-left: 100px;
+}
+.margin-right {
+    margin-right: 100px;
+    text-align: right;
+}
+.margin-mix {
+    margin: 25px 50px 5px 75px;
+}
+.margin-mix2 {
+    margin: 90px 40px 180px;
+}
+.margin-auto {
+    width: 200px;
+    margin: auto;
+    border: 1px solid red;
+}
+.pad70px {
+    padding: 70px;
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+.padleft {
+    padding-left: 70px;
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+.padright {
+    padding-right: 70px;
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+.padtop {
+    padding-top: 70px;
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+.padbottom {
+    padding-bottom: 70px;
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+.padwidth {
+    width: 300px;
+    padding: 50px;
+    border: 1px solid red;
+}
+.padboxsizing {
+    width: 300px;
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.box-model1 {
+    border: 2px solid red;
+    width: 346px;
+}
+.box-model2 {
+    border: 5px solid green;
+    width: 320px;
+    padding: 10px;
+}

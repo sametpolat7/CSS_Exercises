@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .text-1 {
+            width: 50%;
+            height: 100px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 32px;
+            background-color:rgb(88, 85, 85);
+            color: rgb(0, 0, 0);
+            overflow: hidden;
+        }
+        .text-2 {
+            width: 50%;
+            height: 100px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 32px;
+            background-color: rgb(85, 82, 82);
+            color: rgb(0, 0, 0);
+            overflow: visible;
+        }
+        .text-3 {
+            width: 50%;
+            height: 100px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 32px;
+            background-color: rgb(85, 82, 82);
+            color: rgb(0, 0, 0);
+            overflow: scroll;
+        }
+        .text-4 {
+            width: 100px;
+            height: 100px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 32px;
+            background-color: rgb(85, 82, 82);
+            color: rgb(0, 0, 0);
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Overflow</h1>
+        <!-- The CSS overflow property controls what happens to content that is too big to fit into an area.-->
+    </header>
+    <section> <!--Overflow Attributes-->
+        <div> 
+            <p class="text-1"> <!--overflow: hidden -->
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam numquam amet quasi nisi, saepe, doloremque provident iusto voluptatem reiciendis ex cupiditate suscipit incidunt autem adipisci fuga laudantium, nesciunt quod eum?
+            </p>
+            <p class="text-2"> <!--overflow: visible -->
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam, ratione qui esse totam fuga vitae officia earum saepe optio rem ipsa dolore itaque hic maxime magni delectus provident blanditiis?
+            </p><br><br><br>
+            <p class="text-3"> <!--overflow: scroll -->
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam, ratione qui esse totam fuga vitae officia earum saepe optio rem ipsa dolore itaque hic maxime magni delectus provident blanditiis?
+            </p>
+            <p class="text-4"> <!--overflow-y: scroll -->
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam, ratione qui esse totam fuga vitae officia earum saepe optio rem ipsa dolore itaque hic maxime magni delectus provident blanditiis?
+            </p>
+        </div>
+    </section>
+</body>
+</html>

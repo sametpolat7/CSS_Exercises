@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and Padding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Margin and Padding</h1>
+    </header>
+    <section> <!--Margin-->
+        <div>
+            <hr><p class="px-100">This text has 100px margin on 4side on 4side</p><hr>
+            <p class="px-100p">
+                This text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4sideThis text has 100px margin on 4side. 
+            </p><hr>
+            <p class="margin-top">Top 100px</p><hr>
+            <p class="margin-bottom">Bottom 100px</p><hr>
+            <p class="margin-left">Left 100px</p><hr>
+            <p class="margin-right">Right 100px also text-align right.</p><hr>
+            <p class="margin-mix">margin: 25px 50px 5px 75px;</p><hr>
+            <p class="margin-mix2">margin: 90px 40px 180px;</p><hr>
+            <p class="margin-auto">width: 200px; &nbsp;margin: auto; &nbsp;border: 1px solid red;</p><hr><br>
+            <!--If the width is not adjusted, margin auto will be disabled.-->
+        </div>
+    </section>
+    <section> <!--Padding-->
+        <div>
+            <p class="pad70px">This text has 70px padding</p>
+            <p class="padleft">This text has 70px padding on left</p>
+            <p class="padright">This test has 70px padding on right</p>
+            <p class="padtop">This text has 70px padding on top</p>
+            <p class="padbottom">This text has 70px padding on bottom</p>
+            <p class="padwidth">
+                This text has padding 70px on 4side in border. But the width is 440 even though 300 is defined
+            </p>
+            <p class="padboxsizing">
+                This text has padding 70px on 4side in border. And the width is still 300px.
+            </p>
+            <p style="width: 300px;background-color: yellow">300px box</p>
+        </div>
+    </section>
+    <section> <!--Box Model-->
+        <!-- Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins. -->
+        <p class="box-model1">This text is 350px</p>
+        <p class="box-model2">This text width is 320px</p>
+    </section>
+</body>
+</html>

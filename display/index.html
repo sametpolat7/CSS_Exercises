@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Display</h1>
+        <!-- Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline. -->
+    </header>
+    <main>
+        <section>
+            <div> <!--Display: none;-->
+                <!--  
+                    display:none; element is commonly used with javascript to hide content.
+                    The <script> element uses display: none; as default. 
+                -->
+                <p>Lorem ipsum dolor sit.</p>
+                <p class="none">Lorem ipsum dolor sit.</p> <!--does not take up space-->
+                <hr>
+            </div>
+            <div> <!--visibility: hidden;-->
+                <p class="hidden">Lorem ipsum dolor sit.</p> <!--takes up space-->
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div> <!--Override The Default Display Value -->
+                <!-- <li> a block element. but now it is display like inline -->
+                    <ul>
+                        <li>Task</li>
+                        <li>Mission</li>
+                        <li>Goal</li>
+                    </ul>
+
+                <!-- <span> a inline element. but now it is display like block -->
+                    <span class="spna">Lorem, ipsum.</span>
+                    <span class="spna">Lorem, ipsum.</span>
+                    <span class="spna">Lorem, ipsum.</span><hr>
+                
+                <!-- NOTE: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it. -->
+            </div>
+            <div> <!--Example1-->
+                <div class="box" id="box1">Box 1 <br>
+                    <a href="https://google.com" target="_blank">Google</a><br>
+                    <button onclick="removeElement()">Remove</button>
+                </div>
+                <div class="box" id="box2">Box 2 <br>
+                <a href="http://amazon.com" target="_blank">Amazon</a><br>
+                <button onclick="changeVisibility()">Hide</button>
+                </div>
+                <div class="box" id="box3">Box 3 <br><br>
+                    <button onclick="resetElement()">Reset All</button>
+                </div>
+            </div>
+            <div> <!--Example2-->
+                <div id="panel" onclick="myFunction()">Click to open</div>
+                <p class="content-box" id="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, optio ipsa! Illum, delectus odio? Ullam in explicabo quae itaque! Repellat corrupti corporis odio soluta ipsa.
+                </p>
+            </div>
+        </section>
+        <section> <!--display: inline-block-->
+            <!-- Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. -->
+            <!-- Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. -->
+            <div>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, corrupti dicta facere doloribus <span class="dip">amet</span> tenetur ut laborum <span class="dip">vallolid</span> odit consequatur.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, corrupti dicta facere doloribus <span class="dip1">amet</span> tenetur ut laborum <span class="dip1">vallolid</span> odit consequatur.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, corrupti dicta facere doloribus <span class="dip2">amet</span> tenetur ut laborum <span class="dip2">vallolid</span> odit consequatur.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function removeElement() {
+            document.getElementById("box1").style.display="none";
+        }
+        function changeVisibility() {
+            document.getElementById("box2").style.visibility="hidden";
+        }
+        function resetElement() {
+            document.getElementById("box1").style.display="block";
+            document.getElementById("box2").style.visibility="visible";
+        }
+        function myFunction() {
+            document.getElementById("content").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

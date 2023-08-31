@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Position</title>
+</head>
+<body>
+    <header>
+        <h1>Position</h1>
+        <!-- The position property specifies the type of positioning method used for an element.
+
+            There are five different position values:
+
+                -static
+                -relative
+                -fixed
+                -absolute
+                -sticky
+            Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value. -->
+    </header>
+    <main> 
+        <section> <!--Positions -->
+            <div> <!--position: static;-->
+            <!-- HTML elements are positioned static by default.
+                Static positioned elements are not affected by the top, bottom, left, and right properties. -->
+            <p id="static">This &lt;p&gt; element has position:static</p>
+            </div>
+            <div> <!--position: relative;-->
+                <p id="relative">This &lt;p&gt; element has position:relative</p>
+            </div>
+            <div> <!--position: fixed-->
+                <p id="fixed">This &lt;p&gt; element has position:fixed</p>
+            </div>
+            <div> <!--position: absolute-->
+                <p id="absolute">This &lt;p&gt; element has position:absolute</p>
+                <!-- 
+                    Note: Absolute positioned elements are removed from the normal flow, and can overlap elements
+                -->
+            </div>
+            <div> <!---position: sticky-->
+                <p id="sticky">This &lt;p&gt; element has position: sticky</p>
+                <p style="padding-bottom: 1000px; text-align: center;" >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ab deserunt perspiciatis quisquam ullam voluptatibus!
+                </p>
+            </div>
+        </section>
+        <section> <!---Examples-->
+            <div class="container">
+                <img src="img/vesikalik.jpeg" alt="Samet Polat" width="300" height="400">
+                <div class="center-text" >Text ABC</div>
+            </div>
+            <div class="container">
+                <img src="img/vesikalik.jpeg" alt="Samet Polat" width="300" height="400">
+                <div class="right-text" >Text ABC</div>
+            </div>
+            <div class="container">
+                <img src="img/vesikalik.jpeg" alt="Samet Polat" width="300" height="400">
+                <div class="bottom-left" >Text ABC</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

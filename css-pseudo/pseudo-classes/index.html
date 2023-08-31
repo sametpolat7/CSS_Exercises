@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>What are Pseudo-classes?</h1>
+        <!-- A pseudo-class is used to define a special state of an element.
+                For example, it can be used to:
+              - Style an element when a user mouses over it
+              - Style visited and unvisited links differently
+              - Style an element when it gets focus -->
+    </header>
+    <main>
+        <section> <!--Syntax-->
+            <div> <!--Pseudo-classes and HTML Classes-->
+                <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" class="highlight" title="W3schools" target="_blank">Tap to Open Website</a><br><br>
+            </div>
+            <div class="marked-box" > <!--Hover on <div> -->
+                <p>Lorem ipsum dolor sit!</p>
+            </div><br><br>
+            <div><!--Simple Tooltip Hover--> 
+                Hover over this div element to show the p element 
+                <p class="sth">Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="tooltip"> <!--Simple Tooltip Hover2-->
+                <p>Lorem ipsum dolor sit.</p>
+                <p class="dsp-n">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat beatae ab.</p>
+            </div><br><br>
+        </section>
+
+        <section><!--The :first-child Pseudo-class-->
+            <div> <!--Match the first <p> element -->
+                <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</q>
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q>
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q>
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q>
+            </div><br><br>
+            <div> <!--Match the first <i> element in all <p> elements-->
+                <span>Lorem <i>ipsum</i> dolor <i>sit!</i></span>
+                <span>Lorem <i>ipsum</i> dolor <i>sit!</i></span>
+                <span>Lorem <i>ipsum</i> dolor <i>sit!</i></span>
+                <span>Lorem <i>ipsum</i> dolor <i>sit!</i></span>
+            </div><br><br>
+            <div> <!--Match all <i> elements in all first child <p> elements-->
+                <p>Lorem <i>ipsum</i> dolor <i>sit!</i></p>
+                <p>Lorem <i>ipsum</i> dolor <i>sit!</i></p>
+                <p>Lorem <i>ipsum</i> dolor <i>sit!</i></p>
+                <p>Lorem <i>ipsum</i> dolor <i>sit!</i></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

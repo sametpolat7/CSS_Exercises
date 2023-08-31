@@ -1,0 +1,47 @@
+.vertical-nav {
+    list-style-type: none;
+    margin: 50px 0 0;
+    padding: 0;
+    background-color: rgb(237, 237, 237);
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    /* overflow: scroll; if ul has a lot of lists we should use this */
+}
+ul.vertical-nav>li {
+    display: block;
+    padding: 14px 0;
+    text-align: center;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+ul.vertical-nav>li:hover, ul.horizontal-nav>li:hover {
+    cursor: pointer;
+    background-color: rgb(182, 172, 172);
+}
+.active {
+    background-color: rgb(182, 172, 172);
+}
+.text {
+    margin-left: 17%;
+}
+.horizontal-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    position: fixed;
+    top: 0;
+}
+
+ul.horizontal-nav>li {
+    display: inline-block;
+    padding: 14px 8px;
+    margin: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+p {
+    line-height: 100px;
+}

@@ -1,0 +1,117 @@
+        /*Borders*/
+        .dotted{
+            border-style: dotted;
+        }
+        .dashed{
+            border-style: dashed;
+        }
+        .solid {
+            border-style: solid;
+        }
+        .double {
+            border-style: double;
+        }
+        .groove {
+            border-style: groove;
+        }
+        .ridge {
+            border-style: ridge;
+        }
+        .inset {
+            border-style: inset;
+        }
+        .outset {
+            border-style: outset;
+        }
+        .none {
+            border-style: none;
+        }
+        .hidden {
+            border-style: hidden;
+        }
+        .mix {
+            border-style: dotted dashed solid double;
+        } /*First top,than right,bottom and left.*/
+
+        /*Border Width*/
+        .fivepx {
+            border-width: 5px;
+            border-style: dotted;
+        }
+        .medium {
+            border-width: medium;
+            border-style: dotted;
+        }
+        .twopx {
+            border-width: 2px;
+            border-style: dotted;
+        }
+        .thick {
+            border-width: thick;
+            border-style: dotted;
+        }
+        .specific1 {
+            border-style: dotted;
+            border-width: 5px 20px; /*5px top and bottom, 20px right and left bar.*/
+        }
+        .specific2 {
+            border-style: dotted;
+            border-width: 20px 5px; /*20px top and bottom, 5px right and left bar*/
+        }
+        .specific3 {
+            border-style:dotted;
+            border-width: 10px 10px 10px 10px; /*Top,right,bottom,left has 10px*/
+        }
+
+        /*Border Color*/
+        .redbord {
+            border-style: solid;
+            border-color: red;
+        }
+        .bluebord {
+            border-style: solid;
+            border-color: blue;
+        }
+        .greenbord {
+            border-style: solid;
+            border-color: green;
+        }
+        .specificcolor {
+            border-style: solid;
+            border-color: red blue green blue;
+        }
+
+        /*Individual Borders*/
+        .individual1 {
+            border-top-style: dashed;
+            border-bottom-style: dotted;
+            border-left-style: unset;
+            border-right-style: double;
+        }
+        .individual2 {
+            border-style: solid dashed;
+        }
+        .individual3 {
+            border-style: dotted solid dashed;
+            /*2nd feature also defines 4th feature*/
+        }
+
+        /*Rounded Border*/
+        .rounded1 {
+            border: 2px solid red; /*This is Border Shorthand */
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .rounded2 {
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .rounded3 {
+            border: 2px solid red;
+            border-radius: 12px;
+            padding: 5px;
+        }
+        .shorthand1 {
+            border: 8px solid green;
+        }

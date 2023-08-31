@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, tr, th, td {
+            border:1px solid grey;
+            text-align: center;
+        }
+        .main-table {
+            border-collapse: collapse; /*To remove double borders*/
+        }
+        .second-table {
+            width: 50%;
+            height: 240px;
+        }
+        .vertival-align {
+            vertical-align: bottom;
+        }
+        th, td {
+            border:1px solid grey;
+            text-align: center;
+            padding: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: grey;
+        }
+        tr:hover {
+            background-color: tomato; /*remember why they changed places*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tables</h1>
+        <section> <!--Table Borders-->
+            <div>
+                <table class="main-table">
+                    <tr>
+                        <th>Customers</th>
+                        <th>Area</th>
+                        <th>From</th>
+                    </tr>
+                    <tr>
+                        <td>Nike</td>
+                        <td>Clothes</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes Benz</td>
+                        <td>Cars</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>EREGLI</td>
+                        <td>Steel</td>
+                        <td>Turkey</td>
+                    </tr>
+                </table>
+                <br><br><br>
+            </div>
+        </section>
+        <section> <!--Table Size and Alignment-->
+            <div>
+                <table class="second-table">
+                    <tr>
+                        <th>Customers</th>
+                        <th>Area</th>
+                        <th>From</th>
+                    </tr>
+                    <tr>
+                        <td class="vertival-align">Nike</td>
+                        <td class="vertival-align">Clothes</td>
+                        <td class="vertival-align">USA</td>
+                    </tr>
+                    <tr>
+                        <td class="vertival-align">Mercedes Benz</td>
+                        <td class="vertival-align">Cars</td>
+                        <td class="vertival-align">Germany</td>
+                    </tr>
+                    <tr>
+                        <td class="vertival-align">EREGLI</td>
+                        <td class="vertival-align">Steel</td>
+                        <td class="vertival-align">Turkey</td>
+                    </tr>
+                </table>
+                <br><br><br>
+            </div>
+        </section>
+        <section> <!--Table Style-->
+            <div>
+                <table class="third-table">
+                    <tr>
+                        <th>Customers</th>
+                        <th>Area</th>
+                        <th>From</th>
+                    </tr>
+                    <tr>
+                        <td>Nike</td>
+                        <td>Clothes</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes Benz</td>
+                        <td>Cars</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>EREGLI</td>
+                        <td>Steel</td>
+                        <td>Turkey</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

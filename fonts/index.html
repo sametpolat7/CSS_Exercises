@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <title>Fonts</title>
+    <style>
+        .font-shorthand{
+            font:oblique small-caps normal 24px Georgia, serif;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section> <!--Font Family-->
+            <div>
+                <h1>FONTS</h1>
+                <!-- Web safe fonts are fonts that are universally installed across all browsers and devices. -->
+                <!-- However, there are no 100% completely web safe fonts. -->
+                <!-- Therefore, it is very important to always use fallback fonts. -->
+                <p style="font-family: Verdana, Tahoma, sans-serif;">This text has Verdana font.</p>
+                <!-- Here, there are three font types: Tahoma, Verdana, and sans-serif. The second and third fonts are backups, in case the first one is not found.-->
+                <h2>Some Fonts</h2>
+                <p style="font-family:Arial, Helvetica, sans-serif;">
+                    Arial is one of the safest web fonts, and it is available on all major operating systems.Arial is also the default font in Google Docs.
+                </p>
+                <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                    Verdana is a very popular font. Verdana is easily readable even for small font sizes.
+                </p>
+                <p style="font-family:Tahoma, Geneva, Verdana, sans-serif;">
+                    The Tahoma font has less space between the characters.
+                </p>
+                <p style="font-family:'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;">
+                    Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not supported by all mobile operating systems.
+                </p>
+                <p style="font-family:'Times New Roman', Times, serif;">
+                    Times New Roman is one of the most recognizable fonts in the world. It looks professional and is used in many newspapers and "news" websites. It is also the primary font for Windows devices and applications.
+                </p>
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
+                    Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design.
+                </p>
+                <p style="font-family:'Courier New', Courier, monospace;">
+                    Courier New is the most widely used monospace serif font. Courier New is often used with coding displays, and many email providers use it as their default font. 
+                </p>
+            </div>
+        </section>
+        <section> <!--Font Attributes-->
+            <div> <!--Font Style-->
+                <p style="font-style: normal;">This text is normal</p>
+                <p style="font-style: italic;">This text is italic</p>
+                <p style="font-style: oblique;">This text is oblique</p><hr>
+                <!--oblique is very similar to italic, but less supported-->
+            </div>
+            <div> <!-- Font Weight -->
+                <p style="font-weight: normal;">This text is normal</p>
+                <p style="font-weight: bold;">This text is bold</p><hr>
+            </div>
+            <div> <!-- Font Variant -->
+                <p style="font-variant: normal;">This text is normal.</p>
+                <p style="font-variant: small-caps;">This text is small-caps.</p>
+            </div>
+            <div> <!-- Font Size -->
+                <!-- Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).-->
+                <p style="font-size:40px;">This text is 40px</p>
+                <p style="font-size:30px;">This text is 30px</p>
+                <p style="font-size:14px;">This text is 14px</p><hr>
+                
+                <!-- 1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.-->
+                <p style="font-size:2.5em;">This text is 2.5em</p>
+                <p style="font-size:1.875em;">This text is 1.875em</p>
+                <p style="font-size:0.875em;">This text is 0.875em</p><hr>
+
+                <!-- The solution that works in all browsers, is to set a default font-size in percent for the <body> element:-->
+                <div style="font-size: 100%">
+                    <p style="font-size:2.5em;">This text is 2.5em</p>
+                    <p style="font-size:1.875em;">This text is 1.875em</p>
+                    <p style="font-size:0.875em;">This text is 0.875em</p>
+                </div>
+
+                <h2>Responsive Font Size</h2>
+                <!-- The text size can be set with a vw unit, which means the "viewport width".That way the text size will follow the size of the browser window: -->
+                
+                <p style="font-size:5vw;">This text is Responsive (5vw)</p>
+                <p style="font-size:3vw;">This text is Responsive (3vw)</p>
+                <p style="font-size:1vw;">This text is Responsive (1vw)</p>
+
+                <!-- Note:Font size does not change when the screen is zoomed -->
+
+                <!-- Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.-->
+            </div>
+        </section>
+        <section> <!--Font Google-->
+            <div>
+                <!-- Just add a special style sheet link in the <head> section and then refer to the font in the CSS.-->
+                    <p style="font-family: 'Roboto', sans-serif;">This text is Roboto</p>
+            </div>
+        </section>
+        <section> <!--Font Shorthand-->
+            <div>
+                <!-- The order is as follows -->
+                <ol>
+                    <li>font-style</li>
+                    <li>font-variant</li>
+                    <li>font-weight</li>
+                    <li>font-size</li>
+                    <li>font-family</li>
+                </ol>
+                <p class="font-shorthand">This text defines font shorthand</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

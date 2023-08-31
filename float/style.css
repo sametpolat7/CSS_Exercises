@@ -1,0 +1,55 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+img {
+    width: auto;
+    height: 200px;
+}
+.float-right {
+    float: right;
+}
+.container {
+    clear: right;
+}
+.boxes {
+    float: left;
+    text-align: center;
+    padding: 15px;
+}
+#box1 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid red;
+    background-color: red;
+}
+#box2 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid red;
+    background-color: yellow;
+}
+#box3 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid red;
+    background-color: blue;
+}
+.clc {
+    clear: both;
+}
+.border {
+    border: 2px solid red;
+}
+.clc-1 {
+    clear: right;
+}
+.clearfix { /*Basic Clearfix*/
+    overflow: auto;
+}
+.clearfix::after { /*Modern Clearfix*/
+    content: "";
+    display: table;
+    clear: both;
+}

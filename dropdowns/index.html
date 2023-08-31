@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dropdowns</h1>
+        <!-- 
+            Example Explained
+    (HTML) Use any element to open the dropdown content, e.g. a <span>, or a <button> element.
+    Use a container element (like <div>) to create the dropdown content and add whatever you want inside of it.
+    Wrap a <div> element around the elements to position the dropdown content correctly with CSS.
+    (CSS) The .dropdown class uses position:relative, which is needed when we want the dropdown content to be placed right below the dropdown button (using position:absolute).
+    The .dropdown-content class holds the actual dropdown content. It is hidden by default, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable scroll on small screens).
+    Instead of using a border, we have used the CSS box-shadow property to make the dropdown menu look like a "card".
+    The :hover selector is used to show the dropdown menu when the user moves the mouse over the dropdown button.
+         -->
+    </header>
+    <section> <!--Dropdown Button-->
+        <p>Create a dropdown menu that allows the user to choose an option from a list:</p>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quidem. Veniam voluptatum quo minus. Lorem ipsum, dolor sit amet consectetur adipisicing.
+        </p><br><br>
+    </section>
+    <section> <!--Dropdown Img-->
+        <p>Lorem ipsum dolor sit.</p>
+        <div class="container">
+            <img src="https://picsum.photos/200/300" alt="LoremPicsum" style="width: 100px; height: 50px;">
+        <div class="dropdown-img">
+            <img class="img"src="https://picsum.photos/200/300" alt="LoremPicsum" style="width: 300px; height: 200px;">
+        </div>
+        </div><br><br>
+    </section>
+    <section> <!--Dropdown Navbar-->
+        <div class="navbar">
+            <ul class="horizontal-navbar">
+                <li style="margin-left: 0;">List 1</li>
+                <li>List 2</li>
+                <li class="list-dropdown">
+                    List 3
+                    <div class="list-content">
+                        <a href="#">A</a>
+                        <a href="#">B</a>
+                        <a href="#">C</a>
+                    </div>
+                </li>
+                <li>List 4</li>
+                <li style="margin-right: 0;">List 5</li>
+            </ul>
+        </div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa repellendus, ullam voluptas nihil earum dolorum! Accusantium, voluptatem fuga.
+        </p>
+    </section>
+</body>
+</html>

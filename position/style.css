@@ -1,0 +1,46 @@
+#static {
+    position: static;
+}
+#relative {
+    position: relative;
+    left: 30px;
+}
+#fixed {
+    position: fixed;
+    top:0;
+    right: 20px;
+}
+#absolute {
+    position: absolute;
+    left: 300px;
+    top: 500px;
+}
+#sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+.container {
+    position: relative;
+}
+img {
+    opacity: 0.6;
+}
+.center-text {
+    position: absolute;
+    top: 50%;
+    width: 300px; /*Genişlik değeri resmin değerine eşit olmadığı müddetçe text-align=center ı doğru kullanamazsın. (En azından bu örnek için)*/
+    text-align: center;
+}
+.right-text {
+    position: absolute;
+    width: 300px;
+    text-align: right;
+    top:50%;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}

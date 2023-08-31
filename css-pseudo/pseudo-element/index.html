@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Pseudo-elements</h1>
+        <!-- A CSS pseudo-element is used to style specified parts of an element.
+            -For example, it can be used to:
+            -Style the first letter, or line, of an element
+            -Insert content before, or after, the content of an element -->
+    </header>
+    <section> <!--Syntax-->
+        <!-- Notice the double colon notation - ::first-line versus :first-line
+        The double colon replaced the single-colon notation forpseudo-elements in CSS3. This was an attempt from W3C todistinguish between pseudo-classes and pseudo-elements. -->
+        <div> <!--The ::first-line Pseudo-element-->
+            <p class="first-line">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias vero pariatur minus, quod facere eaque est veritatis eos explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia earum omnis ab aspernatur?
+            </p>
+            <!-- Note: The ::first-line pseudo-element can only be applied to block-level elements. -->
+        </div>
+        <div> <!--The ::first-letter Pseudo-element-->
+            <p class="first-letter">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo commodi adipisci quae.
+            </p>
+            <!-- Note: The ::first-letter pseudo-element can only be applied to block-level elements.-->
+        </div>
+        <div> <!--CSS - The ::before Pseudo-element-->
+            <p class="before">Lorem ipsum dolor sit!</p>
+        </div>
+        <div> <!--CSS - The ::after Pseudo-element-->
+            <p class="after">Lorem ipsum dolor sit!</p>
+        </div>
+        <div> <!--CSS - The ::marker Pseudo-element-->
+            <ul>
+                <li>Lorem</li>
+                <li>Ipsum</li>
+                <li>Dolor</li>
+                <li>Sit!</li>
+            </ul>
+        </div>
+        <div> <!--CSS - The ::selection Pseudo-element-->
+            <p class="selection">Lorem ipsum dolor sit!</p>
+        </div>
+    </section>
+</body>
+</html>
