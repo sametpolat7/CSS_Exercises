@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button</title>
+    <style>
+        .btn {
+            margin: 2rem;
+            width: 200px;
+            padding: 16px;
+            cursor: pointer;
+            background-color: rgb(36, 109, 21);
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .a {
+            font-size: 24px;
+            color: white;
+            position: relative;
+            transition: all .5s;
+        }
+        .a::after {
+            font-size: 30px;
+            content: '\00bb';
+            position: absolute;
+            top: -6px;
+            right: -20px;
+            opacity: 0;
+            transition: all .5s;
+        }
+        .btn:hover .a {
+            padding-right: 32px;
+        }
+        .btn:hover .a::after {
+            right: 5px;
+            opacity: 1;
+        }
+        .b {
+            color: white;
+            font-size: 24px;
+        }
+        .btn2 {
+            box-shadow: -4px 4px 0 2px gray;
+            transition: all .1s;
+        }
+        .btn2:active {
+            box-shadow: -1px 1px 0 1px gray;
+        }
+        .btn2:active {
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div> <!--Arrow effect-->
+        <button class="btn" type="button">
+            <span class="a">Hover</span>
+        </button>
+    </div>
+    <div> <!--Pressed Effect-->
+        <button class="btn btn2">
+            <span class="b">Click</span>
+        </button>
+    </div>
+</body>
+</html>

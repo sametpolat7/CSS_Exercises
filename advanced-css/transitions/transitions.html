@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .firstex {
+            width: 75px;
+            height: 50px;
+            background-color: red;
+            transition: width 2s;
+        }
+        .firstex:hover {
+            width: 200px;
+        }
+        .secondex {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s, height 2s;
+        }
+        .secondex:hover {
+            width: 300px;
+            height: 300px;
+        }
+        .a {
+            width: 100px;
+            height: 75px;
+            background-color: red;
+            transition: width 3s;
+            margin-bottom: 16px
+        }
+        .ease:hover, .linear:hover, .ease-in:hover, .ease-out:hover, .ease-in-out:hover, .cubic:hover {
+            width: 300px;
+        }
+        .ease {
+            transition-timing-function: ease;
+        }
+        .linear {
+            transition-timing-function: linear;
+        }
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+        .cubic {
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .delay {
+            transition-delay: 1s;
+        }
+        .delay:hover {
+            width: 300px;
+        }
+        .transform {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            margin-bottom: 1rem;
+            transition: width 1s, height 1s, transform 1s;
+        }
+        .transform:hover {
+            width: 100px;
+            height: 100px;
+            transform: rotate(180deg);
+        }
+        .shorthand {
+            transition: width 2s linear 1s;
+        }
+        .shorthand:hover {
+            width: 300px;
+        }
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 2rem;
+        }
+        .translate {
+            transition: transform 2s;
+        }
+        .translate:hover {
+            transform: translate(500px);
+        }
+        .rotate {
+            transition: transform 2s;
+        }
+        .rotate:hover {
+            transform: rotate(180deg);
+        }
+        .scale {
+            transition: transform 2s;
+        }
+        .scale:hover {
+            transform: scale(1.5,1.5);
+        }
+        .rotateY {
+            transition: transform 2s;
+        }
+        .rotateY:hover {
+            transform: rotateY(180deg);
+        }
+        .rotateX {
+            transition: transform 2s;
+        }
+        .rotateX:hover {
+            transform: rotateX(180deg);
+        }
+        .rotateZ {
+            transition: transform 2s;
+        }
+        .rotateZ:hover {
+            transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            CSS Transitions
+        </h1>
+        <p>
+            CSS transitions allows you to change property values smoothly, over a given duration.
+        </p>
+        <ul>
+            <li>transition</li>
+            <li>transition-delay</li>
+            <li>transition-duration</li>
+            <li>transition-property</li>
+            <li>transition-timing-function</li>
+        </ul>
+        <h2>How to Use CSS Transitions?</h2>
+        To create a transition effect, you must specify two things:
+        <ul>
+            <li>the CSS property you want to add an effect to</li>
+            <li>the duration of the effect</li>
+        </ul>
+       <b>Note:</b> If the duration part is not specified, the transition will have no effect, because the default value is 0.
+       <br><br>
+    </header>
+    <main>
+        <article> <!--Transitions-->
+            <h1>Examples</h1>
+            <div class="firstex">
+            </div>
+            <br><br>
+            <div class="secondex">
+            </div>
+        </article>
+        <article> <!--Specify the Speed Curve of the Transition-->
+            <h2>Specify the Speed Curve of the Transition</h2>
+            <p>
+                The transition-timing-function property specifies the speed curve of the transition effect.
+            </p>
+            The transition-timing-function property can have the following values:
+            <ul>
+                <li>
+                    ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+                </li>
+                <li>
+                    linear - specifies a transition effect with the same speed from start to end
+                </li>
+                <li>
+                    ease-in - specifies a transition effect with a slow start
+                </li>
+                <li>
+                    ease-out - specifies a transition effect with a slow end
+                </li>
+                <li>
+                    ease-in-out - specifies a transition effect with a slow start and end
+                </li>
+                <li>
+                    cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+                </li>
+            </ul>
+            <div class="a ease">ease (Default)</div>
+            <div class="a linear">Linear</div>
+            <div class="a ease-in">ease-in</div>
+            <div class="a ease-out">ease-out</div>
+            <div class="a ease-in-out">ease-in-out</div>
+            <div class="a cubic">Cubic</div>
+        </article>
+        <article> <!--Delay the Transition Effect-->
+            <h2>Delay the Transition Effect</h2>
+            <p>
+                The transition-delay property specifies a delay (in seconds) for the transition effect.
+            </p>
+            <div class="a delay">
+                Delay
+            </div>
+        </article>
+        <article> <!--Transition + Transformation-->
+            <h2>Transition + Transformation</h2>
+            <div class="transform">
+                
+            </div>
+        </article>
+        <article> <!--Transition Shorthand-->
+            <h2>Transition Shorthand</h2>
+            <div class="a shorthand">
+                transition: width 2s linear 1s;
+            </div>
+        </article>
+        <article> <!--Examples-->
+            <h2>Examples</h2>
+            <h3>Slides</h3>
+            <div class="b translate">
+            </div>
+            <h3>Rotate</h3>
+            <div class="b rotate">
+            </div>
+            <h3>Scale</h3>
+            <div class="b scale">
+            </div>
+            <h3>RotateY</h3>
+            <div class="b rotateY">
+            </div>
+            <h3>RotateX</h3>
+            <div class="b rotateX">
+            </div>
+            <h3>RotateZ</h3>
+            <div class="b rotateZ">
+            </div>
+
+        </article>
+    </main>
+</body>
+</html>

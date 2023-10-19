@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .bsc-pa {
+            margin: 2rem;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .bsc-pa a {
+            text-decoration: none;
+            font-size: 24px;
+            padding: 8px 1rem;
+            color: black;
+            float: left;
+        }
+        #active {
+            background-color: green;
+            color: white;
+        }
+        .bsc-pa a:hover {
+            background-color: rgb(66, 181, 66);
+            color: white;
+        }
+        .b a {
+        transition: all .5s;
+        }
+        .breadcumbs>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .breadcumbs li {
+            float: left;
+            margin-right: .5rem;
+        }
+        .breadcumbs li+li::before {
+            content: "/\00a0";
+            font-size: 24px;
+        }
+
+        .breadcumbs a {
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+        }
+        .aktif {
+            background-color: rgb(13, 188, 13);
+            color: white !important;
+            padding: 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bsc-pa clearfix"> <!--Basic Pagination-->
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <div class="bsc-pa clearfix"> <!--Active and Hoverable Pagination-->
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a id="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <div class="bsc-pa b clearfix"> <!--Active and Hoverable Pagination-->
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a id="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <div class="breadcumbs clearfix">
+        <ul>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Turkey</a></li>
+            <li><a class="aktif" href="#">Çanakkkale</a></li>
+            <li><a href="#">Esenler</a></li>
+        </ul>
+    </div>
+</body>
+</html>

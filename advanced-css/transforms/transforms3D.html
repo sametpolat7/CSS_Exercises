@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        div {
+            width: 150px;
+            height: 75px;
+            background-color: yellow;
+        }
+        .rotateX {
+            transform: rotateX(180deg);
+        }
+        .rotateY {
+            transform: rotateY(180deg);
+        }
+        .rotateZ {
+            transform: rotateZ(45deg);
+        }
+        .rotateZ1 {
+            transform: rotateZ(90deg);
+        }
+        .rotateZ2 {
+            transform: rotateZ(135deg);
+        }
+        .rotateZ3 {
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        CSS 3D Transforms
+    </h1>
+    <main>
+        <article> <!--rotateX() method-->
+            <h2>rotateX() method</h2>
+            <p>
+                The rotateX() method rotates an element around its X-axis at a given degree:
+            </p>
+            <h3>Normal</h3>
+            <div>
+                Normal
+            </div>
+            <br><br>
+            <h3>rotateX(180deg)</h3>
+            <div class="rotateX">
+                Bu metin x ekseni üzerinde 180deg çevirilmiştir.
+            </div>
+        </article>
+        <article> <!--rotateY() method-->
+            <h2>rotateY() method</h2>
+            <p>
+                The rotateY() method rotates an element around its Y-axis at a given degree:
+            </p>
+            <div>
+                Normal
+            </div>
+            <br><br>
+            <div class="rotateY">
+                Bu metin y ekseni üzerinde 180deg çevirilmiştir.
+            </div>
+        </article>
+        <article> <!--rotateZ() method-->
+            <h2>--rotateZ() method</h2>
+            <p>
+                The rotateZ() method rotates an element around its Z-axis at a given degree:
+            </p>
+            <div>
+                Normal
+            </div>
+            <br><br>
+            <div class="rotateZ">
+                Bu metin z ekseni üzerinde 45deg çevirilmiştir.
+            </div><br>
+            <div class="rotateZ1">
+                Bu metin z ekseni üzerinde 90deg çevirilmiştir.
+            </div><br>
+            <div class="rotateZ2">
+                Bu metin z ekseni üzerinde 135deg çevirilmiştir.
+            </div><br>
+            <div class="rotateZ3">
+                Bu metin z ekseni üzerinde 180deg çevirilmiştir.
+            </div>
+        </article>
+    </main>
+</body>
+</html>

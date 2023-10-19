@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Fit Property</title>
+    <style>
+        img {
+            width: 600px;
+            height: 400px;
+        }
+        .a {
+            object-fit: cover;
+        }
+        .b {
+            object-fit: contain;
+        }
+        .c {
+            object-fit: fill;
+        }
+        .d {
+            object-fit: scale-down;
+        }
+        .e {
+            margin-top: 2rem;
+            object-fit: cover;
+            object-position: 100% 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Object-Fit Property</h1>
+        <p>
+            The CSS object-fit property is used to specify how an &lt;img&gt; or &lt;video&gt; should be resized to fit its container. <br>
+            This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".
+        </p>
+    </header>
+    <article> <!--object-fit:-->
+        <div>
+            <h2>Normal Image (200x300)</h2>
+            <img src="https://picsum.photos/id/237/200/300" alt="" style="width: 200px;height: 300px;">
+        </div>
+        <div>
+            <h2>object-fit:cover;</h2>
+            <img class="a" src="https://picsum.photos/id/237/200/300" alt="">
+            <p>
+                If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit:
+            </p>
+        </div>
+        <div>
+            <h2>object-fit:contain;</h2>
+            <img class="b" src="https://picsum.photos/id/237/200/300" alt="">
+            <p>
+                If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension:
+            </p>
+        </div>
+        <div>
+            <h2>object-fit:fill;</h2>
+            <img class="c" src="https://picsum.photos/id/237/200/300" alt="">
+            <p>
+                If we use object-fit: fill; the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit:
+            </p>
+        </div>
+        <div>
+            <h2>object-fit:scale-down</h2>
+            <img class="d" src="https://picsum.photos/id/237/200/300" alt="">
+            <p>
+                If we use object-fit: scale-down; the image is scaled down to the smallest version of none or contain:
+            </p>
+        </div>
+        <div style="overflow: auto;">
+            <h2>An example</h2>
+            <img src="https://picsum.photos/id/7/800/300" alt="" style="width: 50%; float: left; height: 300px;object-fit: cover;">
+            <img src="https://picsum.photos/id/70/800/300" alt="" style="width: 50%; float: left; height: 300px;object-fit: cover;">
+        </div>
+    </article>
+    <article> <!--object-position-->
+        <div>
+            <img class="e" src="https://picsum.photos/id/237/200/300" alt="">
+        </div>
+    </article>
+</body>
+</html>

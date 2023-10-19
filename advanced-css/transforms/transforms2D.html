@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transforms</title>
+    <style>
+        div {
+            width: 250px;
+            height: 75px;
+            background-color: yellow;
+            padding: 15px;
+        }
+        .translate:hover {
+            transform: translate(50px, 100px);
+        }
+        .rotate {
+            transform: rotate(20deg);
+        }
+        .rotat {
+            transform: rotate(-20deg);
+        }
+        .scale:hover {
+            transform: scale(2,3);
+        }
+        .scale-:hover {
+            transform: scale(0.5, 0.5);
+        }
+        .scalex:hover {
+            transform: scaleX(2);
+        }
+        .scaley:hover {
+            transform: scaleY(2);
+        }
+        .skewx:hover {
+            transform: skewX(20deg);
+        }
+        .skewy:hover {
+            transform: skewY(20deg);
+        }
+        .skewxy:hover {
+            transform: skew(20deg, 20deg);
+        }
+        .matrix:hover {
+            transform: matrix(2, 20, 20, 2, 20, 20);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            CSS 2D Transforms
+        </h1>
+        CSS transforms allow you to move, rotate, scale, and skew elements.
+        <h2>
+            CSS 2D Transforms Methods
+        </h2>
+        <ul>
+            <li>translate()</li>
+            <li>rotate()</li>
+            <li>scaleX()</li>
+            <li>scaleY()</li>
+            <li>scale()</li>
+            <li>skewX()</li>
+            <li>skewY()</li>
+            <li>skew()</li>
+            <li>matrix()</li>
+        </ul>
+    </header>
+    <main>
+        <article> <!--translate() method-->
+            <h2>translate() method</h2>
+            <p>
+                The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+            </p>
+            <div class="translate">
+                Bu metinin üstüne gelindiğinde 50px sağa, 100px aşağıya translate edilir (Taşınır)
+            </div>
+        </article>
+        <article> <!--rotate() method-->
+            <h2>rotate() method</h2>
+            <p>
+                The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+            </p>
+            <br><br>
+            <div class="rotate">
+                Bu metin saat yönünde 20 derece rotate edilmiştir.
+            </div>
+            <br><br>
+            <div class="rotat">
+                Bu metin saat yönünün tersinde 20 derece rotate edilmiştir.
+            </div>
+            <br><br>
+        </article>
+        <article> <!--scale() method-->
+            <h2>scale() method</h2>
+            <p>
+                The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+            </p>
+            <div class="scale">
+                Bu metin genişlik 2 ölçek, yükseklik 3 ölçek olacak şekilde büyütülür.
+            </div>
+            <br><br>
+            <div class="scale-">
+                Bu metin genişlik 0,5 ölçek, yükseklik 0,5 ölçek olacak şekilde küçütülür.
+            </div>
+            <h2>scaleX() and scaleY() method</h2>
+            <p>
+                The scaleX() method increases or decreases the width of an element.
+                The scaleY() method increases or decreases the height of an element.
+            </p>
+            <div class="scalex">
+                Bu metinin genişliği 2 ölçek artacak
+            </div>
+            <br><br>
+            <div class="scaley">
+                Bu metinin yüksekliği 2 ölçek artacak
+            </div>
+        </article>
+        <article> <!--skew() method-->
+            <h2>skew() method</h2>
+            <p>
+                The skew() method skews an element along the X and Y-axis by the given angles.
+            </p>
+            <div class="skewx">
+                Bu metin  x ekseni üzerinden 20 derece eğilecek.
+            </div>
+            <br><br>
+            <div class="skewy">
+                Bu metin y ekseni üzerinden 20 derece eğilecek.
+            </div>
+            <br><br>
+            <div class="skewxy">
+                Bu metin x ekseni üzerinden 20deg ve y ekseni üzerinden 20deg eğilecek.
+            </div>
+        </article>
+        <article> <!--matrix() method-->
+            <h2>matrix() method</h2>
+            <p>
+                The matrix() method combines all the 2D transform methods into one. <br>
+                The matrix() method take six parameters, containing mathematic functions, which allows you to rotate scale, move (translate), and skew elements.  <br><br>
+                The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+            </p>
+            <div class="matrix">
+                Bu metin x ekseni üzerinde 2 ölçek büyütülüp,y ve yine x ekseninde 20deg eğilip, y ekseninde de 2 ölçek büyütülecek. Aynı zamanda x ve y eksenleri üzerinden 20 deg taşınacak.
+            </div>
+        </article>
+    </main>
+</body>
+</html>

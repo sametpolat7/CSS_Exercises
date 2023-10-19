@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        #tshadow {
+            text-shadow: 2px 2px red;
+        }
+        #tshadow2 {
+            text-shadow: 2px 2px 5px red; /*With blur*/
+        }
+        #tshadow3 {
+            text-shadow: 0 0 3px red; /*With neon effect*/
+        }
+        #tshadow4 {
+            text-shadow: 0 0 3px red, 0 0 3px blue;
+        }
+        #bshadow {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            box-shadow: 10px 10px;
+            margin-bottom: 2rem;
+        }
+        #bshadow1 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 10px 10px gray;
+        }
+        #bshadow2 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 10px 10px 5px gray;
+        }
+        #bshadow3 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 10px 10px 5px 8px gray;
+        }
+        #bshadow4 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 10px 10px 5px gray inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            CSS Shadow Effects
+        </h1>
+        With CSS you can add shadow to text and to elements.
+        <ul>
+            <li>
+                text-shadow
+            </li>
+            <li>
+                box-shadow
+            </li>
+        </ul>
+    </header>
+    <section> <!--Text Shadow-->
+        <h2>Text Shadow</h2>
+        <p>
+            The CSS text-shadow property applies shadow to text.
+        </p>
+        <h1 id="tshadow">
+            Hello World
+        </h1>
+        <h1 id="tshadow2">
+            Hello World
+        </h1>
+        <h1 id="tshadow3">
+            Hello World
+        </h1>
+        <!--Multiple Shadows-->
+        <h2>Multiple Shadows</h2>
+        <p>
+            To add more than one shadow to the text, you can add a comma-separated list of shadows.
+        </p>
+        <h1 id="tshadow4">
+            Hello World
+        </h1>
+    </section>
+    <section> <!--Box Shadow-->
+        <h1>Box Shadow</h1>
+        <p>
+            In its simplest use, you only specify a horizontal and a vertical shadow. The default color of the shadow is the current text-color.
+        </p>
+        <div id="bshadow">
+            Hello World
+        </div>
+        <div id="bshadow1">
+            Hello World
+        </div>
+        <div id="bshadow2">
+            Hello World
+        </div>
+        <div id="bshadow3">
+            Hello World
+        </div>
+        <div id="bshadow4">
+            Hello World
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body {
+            line-height: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .a {
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .anime1 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: ex1;
+            animation-duration: 4s;
+        }
+        @keyframes ex1 {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        .anime2 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: ex2;
+            animation-duration: 4s;
+        }
+        @keyframes ex2 {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            75% {background-color: green;}
+            100% {background-color: black;}
+        }
+        .anime3 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: ex3;
+            animation-duration: 4s;
+            position: relative;
+        }
+        @keyframes ex3 {
+            0% {background-color: red;left: 0px;top: 0px;}
+            25% {background-color: blue;left: 200px;top: 0px;}
+            50% {background-color: green; left: 200px; top: 200px;}
+            75% {background-color: black;left: 0px;top: 200px;}
+            100% {background-color: gray;left: 0;top: 0;}
+        }
+        .anime4 {
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            animation-name: ex4;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            position: relative;
+        }
+        @keyframes ex4 {
+            from {background-color: red;left: 0;}
+            to {background-color: yellow; left: 400px;}
+        }
+        .anime5 {
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            position: relative;
+            animation-duration: 4s;
+            animation-name: ex5;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        @keyframes ex5 {
+            0% {background-color: red;left: 0px;top: 0px;}
+            25% {background-color: blue;left: 200px;top: 0px;}
+            50% {background-color: green; left: 200px; top: 200px;}
+            75% {background-color: black;left: 0px;top: 200px;}
+            100% {background-color: gray;left: 0;top: 0;}
+        }
+        .shorthand {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: red;
+            animation: e9 0.2s linear 1s infinite normal;
+        }
+        @keyframes e9 {
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .e77 {
+            max-width: 50%;
+            opacity: 1;
+            animation: op 4s linear 1s infinite;
+        }
+        @keyframes op {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+        .e78 {
+            max-width: 50%;
+            filter: contrast(100%);
+            animation: const 4s linear 1s infinite;
+        }
+        @keyframes const {
+            from {filter: contrast(100%);}
+            to {filter: contrast(2000%);}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <b>Note:</b> You must refresh the page to start again the animations.
+        <h1>
+            CSS Animations
+        </h1>
+        <p>CSS allows animation of HTML elements without using JavaScript or Flash!</p>
+        In this chapter you will learn about the following properties:
+        <ul>
+            <li>@keyframes</li>
+            <li>animation-name</li>
+            <li>animation-duration</li>
+            <li>animation-delay</li>
+            <li>animation-iteration-count</li>
+            <li>animation-direction</li>
+            <li>animation-timing-function</li>
+            <li>animation-fill-mode</li>
+            <li>animation</li>
+        </ul>
+        <div>
+            <h2> What are CSS Animations?</h2>
+            An animation lets an element gradually change from one style to another. <br>
+            You can change as many CSS properties you want, as many times as you want.  <br>
+            To use CSS animation, you must first specify some keyframes for the animation. <br>
+            Keyframes hold what styles the element will have at certain times. <br>
+        </div>
+    </header>
+    <main>
+        <article> <!--@keyframes-->
+            <p>
+                When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times. <br>
+                To get an animation to work, you must bind the animation to an element. (@keyframes ile elementi bağlayacaksın)
+            </p>
+            <h3>example1</h3>
+            <div class="anime1"></div>
+            <b>Note:</b> The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds).
+            <p>
+                In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).
+            </p>
+            <h3>example2</h3>
+            <p>
+                It is also possible to use percent. By using percent, you can add as many style changes as you like. <br>
+                The following example will change the background-color of the &lt;div&gt; element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:
+            </p>
+            <div class="anime2"></div>
+            <br>
+            <h3>example3</h3>
+            <div class="anime3"></div>
+        </article>
+        <article style="text-align: center;"> <!--Delay an Animation-->
+            <h2>Delay an Animation</h2>
+            <p>
+                The animation-delay property specifies a delay for the start of an animation. <br>
+            </p>
+            <div class="anime3 a" style="animation-delay: 2s;"></div>
+            <p>
+                Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds. <br>
+                In the following example, the animation will start as if it had already been playing for 2 seconds:
+            </p>
+            <div class="anime3 a" style="animation-delay: -2s;"></div>
+        </article>
+        <article> <!--Set How Many Times an Animation Should Run-->
+            <h3>animation-iteration-count</h3>
+            The animation-iteration-count property specifies the number of times an animation should run.
+            <div class="anime4"></div>
+            <b>Note:</b>the value "infinite" to make the animation continue for ever.
+        </article>
+        <article> <!--Run Animation in Reverse Direction or Alternate Cycles-->
+            <p>
+                The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+            </p>
+            <ul>
+                <li>normal - The animation is played as normal (forwards). This is default</li>
+                <li>reverse - The animation is played in reverse direction (backwards)</li>
+                <li>alternate - The animation is played forwards first, then backwards</li>
+                <li>alternate-reverse - The animation is played backwards first, then forwards</li>
+            </ul>
+            <div class="anime5"></div>
+        </article>
+        <article> <!--Shorthand-->
+            <div class="shorthand"></div>
+        </article>
+        <article> <!--Example-->
+            <h1>Examples</h1>
+            <img class="e77 center" src="https://picsum.photos/id/237/200/300" alt=""> <br>
+            <img class="e78 center" src="https://picsum.photos/id/239/200/300" alt="" > <br>
+        </article>
+    </main>
+</body>
+</html>

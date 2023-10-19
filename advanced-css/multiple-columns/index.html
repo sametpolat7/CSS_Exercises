@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns</title>
+</head>
+<style>
+    * {
+        font-size: 24px;
+        line-height: 1.5rem;
+    }
+</style>
+<body>
+    <header>
+        <h1>Multiple Columns</h1>
+        <p>
+            The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers:
+        </p>
+        <ul>
+            <h3>CSS Multi-column Properties</h3>
+            <li>column-count</li>
+            <li>column-gap</li>
+            <li>column-rule-style</li>
+            <li>column-rule-width</li>
+            <li>column-rule-color</li>
+            <li>column-rule</li>
+            <li>column-span</li>
+            <li>column-width</li>
+        </ul>
+    </header>
+    <main>
+        <h2>Lorem, ipsum.</h2>
+        <div style="column-count: 3;"> <!--column-count-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quam impedit consequatur, eos commodi sequi eveniet autem nulla delectus natus maxime ut quo odio expedita! Nihil, eos. Dolor est placeat magni et architecto reprehenderit, nobis minima eum. Amet, quisquam dignissimos id sint iure asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa blanditiis incidunt explicabo ducimus modi, ex iste quia.
+        </div>
+        <h2>Lorem, ipsum.</h2>
+        <div style="column-gap: 15rem; column-count: 3;"> <!--column-gap-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quam impedit consequatur, eos commodi sequi eveniet autem nulla delectus natus maxime ut quo odio expedita! Nihil, eos. Dolor est placeat magni et architecto reprehenderit, nobis minima eum. Amet, quisquam dignissimos id sint iure asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa blanditiis incidunt explicabo ducimus modi, ex iste quia.
+        </div>
+        <h2>Lorem, ipsum.</h2>
+        <div style="column-rule-style: solid; column-rule-width: 6px; column-rule-color: aqua; column-count: 3;"> <!-- column-rule-style, column-rule-width and column-rule-color -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quam impedit consequatur, eos commodi sequi eveniet autem nulla delectus natus maxime ut quo odio expedita! Nihil, eos. Dolor est placeat magni et architecto reprehenderit, nobis minima eum. Amet, quisquam dignissimos id sint iure asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa blanditiis incidunt explicabo ducimus modi, ex iste quia.
+        </div>
+        <h2>Lorem, ipsum.</h2>
+        <div style="column-rule: 6px solid red; column-count: 3;"> <!--Shorthand-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis odio ut, delectus iste nisi esse blanditiis laudantium, nulla, accusamus alias ad praesentium dolores eaque labore officia? Hic vel praesentium doloremque! Pariatur quibusdam, suscipit vero eveniet voluptatem quas animi modi id ut iure debitis?
+        </div>
+        <div style="column-span: 1; column-count: 3;"> <!--column-span-->
+            <h2>Lorem, ipsum.</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex odio quam, reprehenderit animi aspernatur libero veritatis, rem accusantium natus deserunt eius, id vel debitis nesciunt! Porro ex earum amet suscipit nemo quis consequatur magni animi necessitatibus? Et iure impedit sequi fugiat quo ea?
+        </div>
+    </main>
+</body>
+</html>
